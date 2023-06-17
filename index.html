@@ -15,25 +15,27 @@
     <nav>
         <ul>
             <!-- Add links to different sections of page-->
-            <li><a href="#main_header">Top</a></li>
-            <li><a href="#section1">Section 1</a> </li>
-            <li><a href="#section2">Section 2</a></li>
+            <li><a href="#titleheader">Top</a></li>
+            <li><a href="#content1">Section 1</a> </li>
+            <li><a href="#header2">Section 2</a></li>
             <li><a href="#section3">Section 3</a></li>
-            <li><a href="#contactheader">Contact form</a></li>
+            <li><a href="#header3">Contact form</a></li>
         </ul>
     </nav>
 
     <!---------------- MAIN CONTENT STARTS--------------------->
+
     <main class="wrapper"> 
 
         <!---------------- TITLE HEADER --------------------->
-        <header>   
+        
+        <header id = "titleheader">   
             <img src="images/1994_December.png" alt="man sledding"> 
             <h1 class="title">SNOW</h1>
         </header>
-
+        
         <!---------------- CONTENT 1 ---------------------------->  
-        <section class="content">
+        <section class="content" id="content1">
             <!---------------- Group of 3 cards ---------------------> 
             <section class="cards" id="group1">      
                 <article class="card">
@@ -96,11 +98,10 @@
         </section>    
 
         <!---------------- HEADER 2 --------------------->
-        <header>   
+        <header id="header2" >   
             <img class="header_image2" src="images/3kids_smiling.png" alt="3 children smiling"> 
             <h1 class="title">Snow and kids</h1>
         </header>
-
         <!---------------- CONTENT 2 --------------------->
         <section class = "content">
             <!---------------- Group of 4 cards ---------------------> 
@@ -158,7 +159,7 @@
         </section>
         
         <!---------------- HEADER 3 /CONTACT FORM --------------------->  
-        <header> 
+        <header id="header3"> 
             <img src="images/contact_us.png" alt="man offering apple to deer">   
             <section class = "contact_container">
                 <h2 id="contact_form_header_text">CONTACT US</h2>
@@ -181,6 +182,5 @@
         <p>Developer: Carina Young</p>
         <p>&copy2023 </p>
     </footer>
-
 </body>
 </html>
