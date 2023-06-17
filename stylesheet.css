@@ -5,7 +5,6 @@
     scroll-behavior: smooth; /*when menu items clicked, page smoothly scrolls to linked area*/
 }
 
-
 body {
     font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
     font-size: 14px; /* Not sure this is needed*/
@@ -22,11 +21,10 @@ body {
 
 /*------------ Navigation Menu ------------*/
 nav {
-    background-color: #31333c;
+    background-color: rgb(28, 19, 61);
     position: fixed; /* Keeps nav bar on page all the time*/
     top: 0; /* makes nav bar be at the very top with no gap. */
     width: 100%; /* makes nav bar full screen width*/
-    /* overflow: auto;  */
     z-index: 1; /* I was having an issue where the header text was moving overtop of the nav bar.
      This sets the nav bar as the topmost layer whhen there are two things in the same position. */
     padding: 20px; 
@@ -38,14 +36,12 @@ nav ul {
 }
 
 nav li {
-    display: inline-block;
-    border: rgb(85, 85, 85);
-    border-style: solid;
+    display: inline-block; /* makes list go horizontal */
+    border: rgb(85, 85, 85); /* sets border color */
+    border-style: solid; /* sets border line style */
     border-width: 1px;
-    padding: 10px 20px;
-    color: rgb(236, 236, 236);
-    text-align: center;
-    margin: 5px;
+    padding: 10px 20px; /* sets space between border box and the words inside it */
+    margin: 5px; /* adds space between boxes */
 }
 
 nav li:hover {
@@ -53,8 +49,7 @@ nav li:hover {
 }
 
 nav a {
-    color: white;
-    text-align: center;
+    color:whitesmoke;
     text-decoration: none; /* turns off link underline*/
     font-size: 1.2rem;
 }
@@ -62,7 +57,6 @@ nav a {
 nav a:hover {
     background-color: #393f4d;
 }
-
 
 /* ---------------- Header General---------------------*/
 header {
@@ -86,63 +80,44 @@ header img {
 }
 
 /*-------------------Top Header-----------------------------*/
-
 .title {
     font-size: 7rem;
     color: white;
     text-shadow: 0 0 5px black;
 }
 
-.header_text { 
-    text-align: center;
-    position: relative;
-     top: 50%;
-    left: 30%; 
-    color: rgb(70, 184, 230);
-}
-
-.header_text h1 {
-    font-size: 3.25rem;
-    text-shadow: 2px 2px  green;
-}
 /* ----------------Content starts---------------------*/
+    /* the class "content" holds the two sections 
+    within main that are not headers */
 .content {
-    background-color: darkblue;
+    background-color: rgb(28, 19, 61);
     padding-top: 50px;
     padding-bottom: 50px;
 }
 
 /* ----------------Card groups---------------------*/
 
-#group1 {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-}
-
-#group2 {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-}
-
-#group3 {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-}
-#onebigcolumn {
-    display:grid;
-    grid-template-columns: auto;
-}
-
 .cards { 
     padding: 2rem;
     display: grid;
     grid-template-columns: auto;
     grid-gap: 1rem;
-    /* margin: 5%; */
     padding-right: 15px;
     padding-left: 15px;
-    margin-right: auto;
-    margin-left: auto;
+    margin-right: auto; /* keeps cards centered */
+    margin-left: auto;  /* keeps cards centered */
+}
+
+#group1 {
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+#group2 {
+    grid-template-columns: 1fr 1fr;
+}
+
+#group3 {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 
 .cards article  {
@@ -169,14 +144,13 @@ header img {
 .card button {
     width: 130px;
     padding: 10px;
+    margin-left: 10px;
     font-size:medium;
-    margin: auto;
     border-radius: 8px;
     border-style: solid;
     border-width: 1px;
     border-color: #e2e2e2;
     background-color: white;
-
 }
 
 button:hover {
@@ -187,39 +161,23 @@ article.cardwords {
     padding: 10px;
 }
 
-/*------------------Middle "Our Services" header ------------------- */
-
-
-
 /*---------------------------- Contact form -------------------------- */
 
-.container {
+.contact_container {
     max-width: 750px; 
     text-align: center;
-    padding-right: 15px;
-    padding-left: 15px;
-    margin-right: auto;
-    margin-left: auto;
     background-color: rgba(0, 0, 0, 0.62);
-}
-
-#contact_form {
     padding: 20px;
-}
-
-#contact_form_header {
     color: #F2F2F2;
 }
 
 #contact_form_p_text {
-    color: #F2F2F2;
     padding-top: 10px;
     padding-bottom: 10px;
 }
 
 .form-table {
     display: grid;
-    /* grid-auto-flow: column; */
     grid-template-areas: 'name message message message'
                         'email message message message'
                         'subject message message message';
@@ -246,8 +204,8 @@ article.cardwords {
 
 /*------------------ Footer ------------------- */
 footer {
-    background-color: #31333c;
-    color: white;
+    background-color: rgb(28, 19, 61);
+    color: whitesmoke;
     padding: 2vh;
     padding-left: 5vh;
     text-align: left;
@@ -257,7 +215,6 @@ footer {
     bottom: 0;
     z-index: -1;
 }
-
 
 /*------------------Screen sizing and card placement------------------- */
 
