@@ -1,0 +1,300 @@
+/*------------ General ------------*/
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth; /*when menu items clicked, page smoothly scrolls to linked area*/
+}
+
+body {
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 14px; /* Not sure this is needed*/
+    line-height: 1.42857143;
+    color: #333;
+     /* height: 100vh; */
+}
+
+main {
+    overflow-x: hidden;
+    height: 100vh;
+    max-height: 100%;
+    perspective: 1px;
+    perspective-origin: center top;
+}
+
+/*-------------------- NAV BAR ---------------------------*/
+
+nav {
+    background-color: rgb(28, 19, 61);
+    position: fixed; /* Keeps nav bar on page all the time*/
+    top: 0; /* makes nav bar be at the very top with no gap. */
+    width: 100%; /* makes nav bar full screen width*/
+    z-index: 1; /* I was having an issue where the header text was moving overtop of the nav bar.
+     This sets the nav bar as the topmost layer whhen there are two things in the same position. */
+    padding: 20px; 
+}
+
+nav ul {
+    list-style-type: none; /*turns off bullet points*/
+    text-align: center; /* centers menu buttons in menu bar*/
+}
+
+nav li {
+    display: inline-block; /* makes list go horizontal */
+    border: rgb(85, 85, 85); /* sets border color */
+    border-style: solid; /* sets border line style */
+    border-width: 1px;
+    padding: 10px 20px; /* sets space between border box and the words inside it */
+    margin: 5px; /* adds space between boxes */
+}
+
+nav li:hover {
+    background-color: #393f4d;
+}
+
+nav a {
+    color:whitesmoke;
+    text-decoration: none; /* turns off link underline*/
+    font-size: 1.2rem;
+}
+
+/*---------------- MAIN CONTENT ---------------------*/
+
+section {
+    /* height: 100vh; */
+    background-color: rgb(28, 19, 61);;
+}
+
+.parallax {
+    position: relative;
+    height: 75rem;
+    max-height: 80%;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover; 
+    transform-origin: center top;
+    transform: translateZ(-1px) scale(2.5);   /*this is making the other content disappear */
+    z-index: -1;
+}
+
+.notparallax {
+    transform: translateZ(0);
+    z-index: 2;
+    padding: 60px 10px;
+}
+
+/*---------------- Background images for parallax sections ---------------------*/
+#top {
+    background-image: url(images/1994_December.png);
+    /* height: 650px; */
+    z-index: -.5;
+}
+
+#sectionB {
+    background-image: url(images/3kids_large.png);
+    background-position: top center;
+    z-index: -1;
+}
+
+#contactform {
+    background-image: url(images/1995\ VKWPEW423.jpeg);
+    z-index: -2;
+}
+
+/*---------------- Groups of cards ---------------------*/
+
+h1 {
+    font-size: 7rem;
+    color: white;
+    text-shadow: 0 0 5px black;
+    display: flex;
+    justify-content: center;
+    padding: 15rem 0;
+}
+
+.cardset {
+    display: flex;
+    width: 75%;
+    margin-right: auto;
+    margin-left: auto;
+    justify-content: center;
+    background-color: rgb(28, 19, 61);
+    z-index: 1; 
+}
+
+/*---------------- Individual cards ---------------------*/
+.card  {
+    display: flex;
+    flex-direction: column;
+    background-color: #F2F2F2;
+    margin: 20px;
+}
+
+.card img {
+    object-fit:contain;
+    width:100%;
+}
+
+.card h2 {
+    padding-top: 1rem;
+    padding-left: 0.75rem; 
+}
+
+.card p {
+    font-size: 1rem;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    text-align: left;
+    padding: 1rem .75rem; 
+}
+
+.card button {
+    width: 130px;
+    padding: 10px;
+    margin-left: 10px;
+    font-size:medium;
+    border-radius: 8px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #e2e2e2;
+    background-color: white;
+}
+
+button:hover {
+    background-color: #e2e2e2
+}
+
+article.cardwords {
+    padding: 10px;
+}
+
+.card__image {
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-top-left-radius: 0.25rem;
+    border-top-right-radius: 0.25rem;
+    overflow: hidden;
+    position: relative;
+}
+
+.card1 {
+    width: 33%
+}
+
+.card3 {
+    width: 25%
+}
+
+
+/*------------------Section B text ------------------- */
+.sectionBheader {
+    color: whitesmoke;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    padding-top: 30vh;
+    /* padding-bottom: auto; */
+    font-size: 4rem;
+    text-shadow: 0 0 5px black;
+}
+
+.sectionBtext {
+    color: whitesmoke;
+    position: relative;
+    font-size: 1.25rem;
+    text-shadow: 0 0 5px black;
+    width: 35vw;
+    margin-right: auto;
+    margin-left: auto;
+    font-weight: normal;
+    text-align: center;
+}
+/*---------------------------- Contact form -------------------------- */
+
+.contact_container {
+    margin: auto;
+    width: 70rem;
+    max-width: 50%; 
+    min-width: 500px;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.62);
+    padding: 20px;
+    color: #F2F2F2;
+    display: flex;
+    flex-flow: column;
+    position: absolute;
+    justify-content: center;
+    right: 0;
+    left: 0;
+    top: 50%;
+}
+
+#contact_form_p_text {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.form-table {
+    display: grid;
+    grid-template-areas: 'name message message message'
+                        'email message message message'
+                        'subject message message message';
+    gap: 5px;                    
+}
+
+#name {grid-area: name;}
+#email {grid-area: email;}
+#subject {grid-area: subject;}
+#message {grid-area: message;}
+
+.input-field {
+    padding: 5px;
+    margin: 2px;
+}
+
+#message {
+    padding-left: 5px;
+    margin:2px;
+    padding-bottom: 70px;
+    padding-top: 5px;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif
+}
+
+/*------------------ Footer ------------------- */
+
+footer {
+    background-color: rgb(28, 19, 61);
+    color: whitesmoke;
+    padding: 1rem;
+    padding-left: 5vh;
+    text-align: left;
+    height: 3rem;
+    width: 100%;
+}
+
+
+/*------------------Section B text ------------------- */
+.sectionBheader {
+    color: whitesmoke;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    padding-top: 30vh;
+    /* padding-bottom: auto; */
+    font-size: 4rem;
+    text-shadow: 0 0 5px black;
+}
+
+.sectionBtext {
+    color: whitesmoke;
+    position: relative;
+    font-size: 1.25rem;
+    text-shadow: 0 0 5px black;
+    width: 35vw;
+    margin-right: auto;
+    margin-left: auto;
+    font-weight: normal;
+    text-align: center;
+}
+

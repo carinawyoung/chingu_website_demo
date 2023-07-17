@@ -1,0 +1,187 @@
+<!--Notes: I added a div element at the top of each of 
+    the parallax sections to use as the hyperlink connector
+    for the nav bar. When I tried connecting the parallax sections 
+    directly, the link took me to the middle of the parallax section,
+    which wasn't what I wanted. -->
+
+<!--Notes: I set up JS code to -->    
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stylesheet.css">
+    <script defer src="main.js"></script>
+    <title>Snow2</title>
+</head>
+<body>
+    <nav class="navigation">
+        <ul>
+            <li class = "top"><a href="#topnav">Top</a></li>
+            <li class = "sectionA"><a href="#sectionA">Section A</a> </li>
+            <li class = "sectionB"><a href="#sectionBnav">Section B</a></li>
+            <li class = "sectionC"><a href="#sectionC">Section C</a></li>
+            <li class = "contactform"><a href="#contactformnav">Contact form</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <!------------ TOP header image -------------->
+        <div id="topnav"></div> 
+        <section class="parallax" id="top">
+            <h1 class="nonparallax">SNOW</h1>
+        </section>
+
+        <!------------ SECTION A: two sets -------------->        
+        <section class="notparallax" id="sectionA">
+            <!--------- Set of 3 cards ----------->
+            <div class="cardset" id="cardset1">
+                <article class="card card1" >
+                    <img src="images/g1_2.png" alt="Snow on branch">
+                    <article class="cardwords"> 
+                        <h2>Plants and snow</h2>
+                        <p>Praesent quis velit neque. 
+                            Quisque semper porta nisi vitae suscipit. 
+                            Duis lectus magna, ornare ac scelerisque. Morbi sagittis justo a velit placerat ullamcorper quis quis velit. Sed convallis at risus ullamcorper auctor. </p>
+                        <button>Button</button>  
+                    </article>  
+                </article>
+                <article class="card card1">
+                    <img src="images/g1_4.png" alt="Kids falling off sled">
+                    <article class="cardwords">
+                        <h2>People and snow</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi illum eius mollitia sit recusandae ad laudantium nostrum iusto autem. Ipsum ratione sunt eveniet harum odit assumenda voluptatem alias ut officiis.</p>
+                        <button>See Details</button> 
+                    </article>  
+                </article>
+                <article class="card card1">
+                    <img src="images/g1_3.png" alt="Shoeprint in the snow">
+                    <article class="cardwords">
+                        <h2>Snow Art</h2>
+                        <p>Morbi sagittis justo a velit placerat ullamcorper quis quis velit.
+                            Sed convallis at risus ullamcorper auctor.
+                            Praesent quis velit neque. Quisque semper porta nisi vitae suscipit.
+                            Duis lectus magna, ornare ac scelerisque.</p>
+                        <button>Button</button>  
+                    </article>  
+                </article>
+            </div>
+            
+            <!----------- Set of 2 cards ------------>
+            <div class="cardset" id="cardset2">
+                <article class="card">
+                    <img src="images/forecast2.png" alt="forecast of snowstorm">
+                    <article class="cardwords"> 
+                        <h2>Snowstorms</h2>
+                        <p>Morbi sagittis justo a velit placerat ullamcorper quis quis velit. 
+                            Sed convallis at risus ullamcorper auctor. Praesent quis velit neque. 
+                            Quisque semper porta nisi vitae suscipit. 
+                            Duis lectus magna, ornare ac scelerisque.</p>
+                    </article> 
+                </article>
+                <article class="card">
+                    <img src="images/snowFromAir2.png" alt="snowy mountains as seen from an airplane">
+                    <article class="cardwords">
+                        <h2>Snowy landscapes</h2>
+                        <p>In euismod libero at magna dapibus, in rutrum velit lacinia.
+                            Etiam a mi quis arcu varius condimentum. Praesent quis velit neque. 
+                            Quisque semper porta nisi vitae suscipit.</p>
+                        <button>Read More</button> 
+                    </article>   
+                </article>
+            </div>
+        </section>
+
+        <!------ Section B: kids smiling full-screen image -------->       
+        <div id="sectionBnav"></div>
+        <section class="parallax" id="sectionB">
+            <h2 class="sectionBheader">Words</h2>
+            <h4 class="sectionBtext">Lorem ipsum dolor sit amet 
+                consectetur adipisicing elit.</h4>
+        </section>
+
+        <!------ Section C: two sets of cards -------->       
+        <section class="notparallax" id="sectionC">
+            <!---------------- Group of 4 cards ---------------------> 
+            <div class="cardset" id="cardset3">
+                <article class="card card3" >
+                    <div class="card_image card_image--kids_eating_snow"></div>
+                    <img src="images/kids_eating_snow.png " alt="two children eating snow">
+                    <article class="cardwords"> 
+                        <h2>Snow flavors</h2>
+                        <p>Sit amet consectetur adipisicing elit. Commodi illum eius mollitia sit recusandae ad laudantium nostrum iusto autem. Ipsum ratione sunt eveniet harum odit assumenda voluptatem alias</p>  
+                    </article>  
+                </article>
+
+                <article class="card card3" >
+                    <div class="card_image card_image--tree-fort"></div>
+                    <img src="images/kid_under_tree.png" alt="child sitting under snow-covered tree fort ">
+                    <article class="cardwords">
+                        <h2>Hiding from snow</h2>
+                        <p>Odio scelerisque ante ornare commodo. 
+                            Sed faucibus dui libero, in tincidunt purus pretium quis. Recusandae ad laudantium nostrum. </p>
+                        <button>Read It</button> 
+                    </article>   
+                </article>
+
+                <article class="card card3" >
+                    <div class="card_image card_image--snowman"></div>
+                    <img src="images/kids_snowman.png" alt="two children next to a snowman">
+                    <article class="cardwords"> 
+                        <h2>Building with snow</h2>
+                        <p>Ut ac odio scelerisque ante ornare commodo. 
+                            Sed faucibus dui libero, in tincidunt purus pretium quis. Fusce posuere egestas enim eu viverra.</p>
+                    </article> 
+                </article>
+
+                <article class="card card3">
+                    <div class="card_image card_image--child_smiling"></div>
+                    <img src="images/kids_smiling.png" alt="child in coat, grinning through snow falling">
+                    <article class="cardwords">
+                        <h2>Enjoying snowfall</h2>
+                        <p>Sed faucibus dui libero, 
+                            in tincidunt purus pretium quis. Ut ac odio scelerisque ante ornare commodo.</p>    
+                        <button>Details</button> 
+                    </article>   
+                </article>
+            </div>
+            <!---------------- Single card ---------------------> 
+            <div class="cardset" id="cardset4">
+                <article class="card">
+                    <img src="images/airplanes_in_snow.png" alt="snowy mountains as seen from an airplane">
+                    <article class="cardwords">
+                        <h2>People and snow</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam tempor eros eget eros maximus, ut cursus sem euismod. Donec iaculis tristique odio at consectetur. Nullam dignissim varius suscipit. Sed in leo sit amet velit finibus pretium. Vivamus dictum nisi ac fermentum interdum. Vestibulum vel mauris at erat mattis accumsan et ac lorem. Cras non venenatis orci, sed tincidunt massa. Duis nisl lectus, auctor eu sodales at, dignissim eu orci. Sed vitae venenatis magna, in blandit metus. Praesent volutpat cursus rhoncus. Aenean arcu diam, suscipit ac neque in, sollicitudin convallis orci.</p>
+                        <p>Fusce eu porta massa, sed tincidunt turpis. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vivamus a urna tellus. Integer pharetra vitae nisi et lacinia. Morbi sagittis justo a velit placerat ullamcorper quis quis velit. Sed convallis at risus ullamcorper auctor. Praesent quis velit neque. Quisque semper porta nisi vitae suscipit. Duis lectus magna, ornare ac scelerisque quis, maximus eget nisi.</p>
+                        <button>Read More</button> 
+                    </article>   
+                </article>
+            </div>
+        </section>
+        
+        <!------ Contact form -------->    
+        <div id="contactformnav"></div>   
+        <section class="parallax" id="contactform">
+            <div class = "contact_container">
+                <h2 id="contact_form_header_text">CONTACT US</h2>
+                <p id="contact_form_p_text" >Nunc diam leo, fringilla vulputate elit lobortis, consectetur vestibulum quam. Sed id
+                    felis ligula. In euismod libero at magna dapibus, in rutrum velit lacinia.
+                    Etiam a mi quis arcu varius condimentum.</p>
+                <form class="form-table" method="post" action="">
+                    <input class="input-field" type="text" name="Name" id="name" placeholder="Name" autocomplete="on"> 
+                    <input class="input-field" type="email" name="Email" id="email" placeholder="Email" autocomplete="on">
+                    <input class="input-field" type="text" name="Subject" id="subject" placeholder="Subject" >   
+                    <!-- <input type="text" name="Message" id="message" placeholder="Your message here..."> -->
+                    <textarea id="message" placeholder="Your message here..."></textarea>
+                </form>
+            </div>
+        </section>
+    </main> 
+
+    <!------ Footer -------->       
+    <footer>
+        <p>&copy2023  &nbsp&nbsp&nbsp&nbsp Developer: Carina Young </p>  
+    </footer>
+</body>
+</html>
